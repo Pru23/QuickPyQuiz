@@ -1,0 +1,52 @@
+questions = [
+    {
+    "prompt": "What is the capital of Namibia?",
+    "choices": ["A. Paris", "B.Windhoek", "C. Dodoma", "D. Maputo"],
+    'answer': "B"
+    },
+
+    {
+      "prompt": "Which language is widely spoken in Mali?",
+       "choices":["A. Spanish", "B. English", "C. French", "D. Bambara"],
+        "answer": "D"
+    },
+    {
+        "prompt": "What is the smallest prime number?",
+        "choices":["A. 1", "B. 2", "C. 3", "D. 5"],
+        "answer": "B"
+    },
+    {
+        "prompt": "Who wrote Things Fall Apart?",
+        "choices":["A. Chinua Achebe", "B. Harper Lee", "C. Ben Okri", "D. Stella Nyanzi"],
+        "answer": "A"
+    },
+    {
+        "prompt": ["How many calories must you burn to lose one pound?",],
+        "choices": ["A. 300", "B. 1000", "C. 3000", "D. 3500"],
+        "answer": "D"
+    },
+    {
+        "prompt": ["What bird lays the largest eggs?"],
+        "choices": ["A.Ostrich, B. Dove,  C.Goose, D. Eagle"],
+        "answer": "A"
+    }
+
+]
+
+
+def run_quiz(questions):
+    score = 0
+    for question in questions:
+        print(question['prompt'])
+        for choice in question['choices']:
+            print(choice)
+        answer =input('Enter your answer(A, B, C, or D: ').upper()
+        if answer == question['answer']:
+            print("Correct, YAY!!!\n")
+            score += 1
+        else:
+            print("Hmm, that’s not quite right. The correct answer was", question['answer'], "\n")
+
+    print(f"Your final score is {score} out of {len(questions)} questions correct")
+
+run_quiz(questions)
