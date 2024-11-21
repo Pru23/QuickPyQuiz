@@ -1,7 +1,10 @@
 # QuickPyQuiz
 "An interactive Python quiz project where users can challenge themselves with dynamic questions. Features multiple-choice questions,  and score tracking."
 
-This README provides an overview and explanation of the Quiz Application code.
+
+![quiz](https://github.com/user-attachments/assets/8a8fb06d-301e-49fc-bf06-0692adbcf2be)
+
+This Readme provides an overview and explanation of the Quiz Application code.
 1. Overview
 The Quiz Application is a Python script designed to test users with a series of multiple-choice questions. Each question has a prompt, a set of answer choices, and one correct answer. The user's answers are compared to the correct answer, and their score is calculated based on how many questions they answer correctly.
 2. Structure of the Code
